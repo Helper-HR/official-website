@@ -25,8 +25,8 @@ npm run build && npm start   # next start -p 3100
 
 ## 静态资源
 
-- `public/downloads/sensor.zip` —— 浏览器扩展压缩包。**扩展源码在另一个仓库 `boss-extension/sensor`**；
-  每次扩展发新版后，把最新 `sensor` 文件夹压成 `sensor.zip`（含顶层 `sensor/` 目录）替换这里即可。
+- `public/downloads/hr-helper-<版本>.zip` —— 浏览器扩展压缩包。**扩展源码在另一个仓库 `boss-extension/sensor`**；
+  由 boss-extension 的同步 workflow 在发版时自动打包推送，并自动改写 `site.ts` 的 `EXTENSION_URL` 指向最新版本，无需手动替换。
   > 当前架构为**纯浏览器**：所有操作（打招呼、翻页）都在浏览器内用可信输入完成，无需桌面端、无需校准。
 - `public/downloads/ChromeSetup.exe` —— Chrome 安装包（方便国内用户）。如不想托管，可在 `site.ts` 把
   `CHROME_WIN_URL` 改成官方链接并删除此文件。

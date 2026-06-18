@@ -1,8 +1,9 @@
 /* ===== 站点可编辑配置：填上真实链接即可生效，留空则显示占位/敬请期待 ===== */
 
 // 浏览器扩展 = 仓库里的 sensor/ 文件夹（所有操作都在浏览器内完成，无需桌面端）。
-// 发布新版后用 sensor/ 重新打包替换 public/downloads/sensor.zip 即可。
-export const EXTENSION_URL = "/downloads/sensor.zip";
+// 此链接由 boss-extension 的同步 workflow 在发版时自动改写指向最新 hr-helper-<版本>.zip，
+// 一般无需手动改动。
+export const EXTENSION_URL = "/downloads/hr-helper-0.4.0.zip";
 
 // Chrome 浏览器安装包（用户的前置条件，已就绪）
 export const CHROME_WIN_URL = "/downloads/ChromeSetup.exe";

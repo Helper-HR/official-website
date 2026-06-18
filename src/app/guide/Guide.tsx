@@ -70,7 +70,7 @@ export default function Guide() {
                 <div>
                   <div className="lp-guide-t">下载并解压压缩包</div>
                   <div className="lp-guide-d">
-                    下载 <code>sensor.zip</code> 后右键解压，得到一个 <code>sensor</code> 文件夹。
+                    下载压缩包（<code>hr-helper-版本号.zip</code>）后右键解压，得到一个 <code>sensor</code> 文件夹。
                     <b> 记住它的位置、别删除</b>——扩展要一直读它。
                   </div>
                 </div>
@@ -78,7 +78,7 @@ export default function Guide() {
               <div className="lp-fig">
                 <div className="lp-chip zip">
                   <i className="ti ti-file-zip" aria-hidden="true" />
-                  sensor.zip
+                  hr-helper.zip
                 </div>
                 <i className="ti ti-arrow-right lp-fig-arrow" aria-hidden="true" />
                 <div className="lp-chip folder">

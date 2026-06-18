@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git remote *)",
+      "Bash(git branch *)",
+      "Bash(nslookup helper-hr.com 1.1.1.1)",
+      "Bash(nslookup www.helper-hr.com 1.1.1.1)",
+      "Bash(nslookup -type=CAA helper-hr.com 1.1.1.1)"
+    ]
+  }
+}
