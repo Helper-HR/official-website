@@ -144,11 +144,11 @@ export default function Landing() {
       <section className="lp-trust">
         <div className="lp-wrap lp-reveal lp-trust-grid">
           <div className="lp-trust-item">
-            <div className="lp-trust-v">2000+</div>
+            <div className="lp-trust-v">46</div>
             <div className="lp-trust-k">位 HR 正在使用</div>
           </div>
           <div className="lp-trust-item">
-            <div className="lp-trust-v">500 万+</div>
+            <div className="lp-trust-v">2000+</div>
             <div className="lp-trust-k">累计帮你打招呼</div>
           </div>
           <div className="lp-trust-item">
