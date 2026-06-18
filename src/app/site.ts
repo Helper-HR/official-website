@@ -1,7 +1,7 @@
 /* ===== 站点可编辑配置：填上真实链接即可生效，留空则显示占位/敬请期待 ===== */
 
-// 浏览器扩展（眼睛）= 仓库里的 sensor/ 文件夹。
-// 由 scripts/pack-extension.mjs 在每次构建时从仓库重新打包，故此链接永远是最新版。
+// 浏览器扩展 = 仓库里的 sensor/ 文件夹（所有操作都在浏览器内完成，无需桌面端）。
+// 发布新版后用 sensor/ 重新打包替换 public/downloads/sensor.zip 即可。
 export const EXTENSION_URL = "/downloads/sensor.zip";
 
 // Chrome 浏览器安装包（用户的前置条件，已就绪）
@@ -23,9 +23,9 @@ export const CHANGELOG: { ver: string; date: string; tag?: string; items: string
     date: "2026-06-18",
     tag: "最新",
     items: [
-      "新增「AI 智能筛选」预告入口",
-      "打招呼节奏更拟人，随机停顿与游走优化",
-      "侧边栏显示在线额度与运行日志",
+      "纯浏览器架构：免装桌面端，安装扩展即可用",
+      "列表页一键开场：自动点开可视区候选人进详情",
+      "今日额度实时显示，每打一个即时扣减",
     ],
   },
   {
@@ -33,17 +33,17 @@ export const CHANGELOG: { ver: string; date: string; tag?: string; items: string
     date: "2026-06-03",
     items: [
       "详情页阅读式工作流：滚动阅读 → 斟酌 → 沟通",
+      "打招呼节奏更拟人，随机停顿、游走与休息优化",
       "授权与每日额度管控，远程续期/调额",
-      "多屏与系统缩放下的坐标校准更稳",
     ],
   },
   {
     ver: "v1.0.0",
     date: "2026-05-20",
     items: [
-      "首个正式版：真实鼠标打招呼 + 自动翻页",
-      "「眼睛 + 手」双引擎架构上线",
-      "Windows / macOS + Chrome 全支持",
+      "首个正式版：浏览器内可信输入打招呼 + 自动翻页",
+      "侧边栏显示在线额度与运行日志",
+      "Chrome 全支持，一键加载扩展",
     ],
   },
 ];

@@ -146,7 +146,7 @@
 .lp-feat-t { font-size: 16px; font-weight: 700; margin-bottom: 6px; }
 .lp-feat-d { font-size: 13.5px; color: var(--lp-body); }
 
-/* ---- 眼睛+手 原理 ---- */
+/* ---- 工作原理 ---- */
 .lp-engine { display: flex; align-items: stretch; gap: 16px; justify-content: center; flex-wrap: wrap; margin-top: 36px; }
 .lp-engine-card { flex: 1; min-width: 220px; border-radius: 16px; padding: 26px 24px; }
 .lp-engine-card.eye { background: #eaf1ff; }

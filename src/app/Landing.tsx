@@ -257,14 +257,14 @@ export default function Landing() {
         </div>
       </section>
 
-      {/* ===== 工作原理 眼睛+手 ===== */}
+      {/* ===== 工作原理 ===== */}
       <section className="lp-section" id="how">
         <div className="lp-wrap lp-reveal">
           <div className="lp-center">
             <span className="lp-kicker">工作原理</span>
-            <h2 className="lp-h2">「眼睛 + 手」双引擎，稳而自然</h2>
+            <h2 className="lp-h2">浏览器内完成，操作如真人</h2>
             <p className="lp-sub">
-              浏览器只负责「看」，桌面端用真实鼠标「做」，操作和真人无异。
+              扩展先「看懂」页面，再用浏览器原生的可信输入「动手」，和真人点击无异。无需桌面程序、无需校准。
             </p>
           </div>
           <div className="lp-engine">
@@ -272,9 +272,9 @@ export default function Landing() {
               <span className="lp-engine-ico">
                 <i className="ti ti-eye" aria-hidden="true" />
               </span>
-              <div className="lp-engine-t">眼睛 · 浏览器扩展</div>
+              <div className="lp-engine-t">看 · 读取页面</div>
               <div className="lp-engine-d">
-                只读页面、识别候选人、规划流程，不打扰你的操作。
+                只读识别候选人、规划流程与节奏，不修改页面、不打扰你的操作。
               </div>
             </div>
             <div className="lp-engine-arrow">
@@ -284,9 +284,9 @@ export default function Landing() {
               <span className="lp-engine-ico">
                 <i className="ti ti-hand-finger" aria-hidden="true" />
               </span>
-              <div className="lp-engine-t">手 · 桌面端程序</div>
+              <div className="lp-engine-t">做 · 可信输入</div>
               <div className="lp-engine-d">
-                真实鼠标点击与滚动，节奏自然，本机运行不上传数据。
+                用浏览器原生可信输入点击与滚动，节奏自然如真人，全程本机、不上传数据。
               </div>
             </div>
           </div>
@@ -308,7 +308,7 @@ export default function Landing() {
               <div className="lp-td c">纯手动</div>
             </div>
             {[
-              ["真鼠标 · 拟人化", true, false, "human"],
+              ["可信输入 · 拟人化", true, false, "human"],
               ["批量自动处理", true, true, false],
               ["温和保护账号", true, false, "na"],
               ["解放双手 · 省时", true, true, false],
@@ -395,14 +395,13 @@ export default function Landing() {
         <div className="lp-wrap lp-reveal">
           <div className="lp-center">
             <span className="lp-kicker">快速上手</span>
-            <h2 className="lp-h2">四步，几分钟就能开始</h2>
+            <h2 className="lp-h2">三步，几分钟就能开始</h2>
           </div>
           <div className="lp-steps">
             {[
-              ["1", "下载并启动桌面端", "双击运行小程序"],
-              ["2", "安装浏览器扩展", "一键加载，现在即可"],
-              ["3", "输入授权码", "开通后自动激活"],
-              ["4", "在插件里开始处理", "设定处理量即跑"],
+              ["1", "安装浏览器扩展", "一键加载，现在即可"],
+              ["2", "输入授权码", "开通后自动激活"],
+              ["3", "在插件里开始处理", "设定处理量即跑"],
             ].map(([n, t, d]) => (
               <div className="lp-step" key={n}>
                 <div className="lp-step-n">{n}</div>
@@ -438,7 +437,7 @@ export default function Landing() {
                 </li>
                 <li>
                   <i className="ti ti-check" />
-                  桌面端 + 浏览器扩展
+                  纯浏览器扩展，免装桌面端
                 </li>
                 <li>
                   <i className="ti ti-check" />
@@ -494,7 +493,7 @@ export default function Landing() {
                 会不会导致账号被封？
               </div>
               <div className="lp-a">
-                HR Helper 采用「真实鼠标 + 拟人化节奏」操作——阅读、停顿、滚动、翻页都模拟真人，
+                HR Helper 采用「浏览器可信输入 + 拟人化节奏」操作——阅读、停顿、滚动、翻页都模拟真人，
                 <b>合理使用下风险极低</b>。建议：① 控制每日处理量、别长时间高频；② 保持随机间隔、适度休息；③ 像平时一样正常使用账号。
                 <span className="lp-note">
                   <i className="ti ti-alert-triangle" style={{ marginRight: 5 }} aria-hidden="true" />
@@ -509,7 +508,7 @@ export default function Landing() {
                 会上传我的数据吗？
               </div>
               <div className="lp-a">
-                不会。桌面端只在你<b>本机</b>帮你点鼠标，不联网、不上传简历或候选人信息，仅在校验授权额度时做一次轻量在线验证。
+                不会。扩展只在你<b>本机浏览器内</b>操作，不上传简历或候选人信息，仅在校验授权额度时做一次轻量在线验证。
               </div>
             </div>
             <div className="lp-qa v">

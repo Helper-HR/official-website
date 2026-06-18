@@ -27,8 +27,7 @@ npm run build && npm start   # next start -p 3100
 
 - `public/downloads/sensor.zip` —— 浏览器扩展压缩包。**扩展源码在另一个仓库 `boss-extension/sensor`**；
   每次扩展发新版后，把最新 `sensor` 文件夹压成 `sensor.zip`（含顶层 `sensor/` 目录）替换这里即可。
+  > 当前架构为**纯浏览器**：所有操作（打招呼、翻页）都在浏览器内用可信输入完成，无需桌面端、无需校准。
 - `public/downloads/ChromeSetup.exe` —— Chrome 安装包（方便国内用户）。如不想托管，可在 `site.ts` 把
   `CHROME_WIN_URL` 改成官方链接并删除此文件。
 - `public/wechat-qr.png` —— 客服微信二维码。
-
-> 注：`site.ts` 的 changelog 仍有旧架构（真实鼠标/眼睛+手/校准）措辞，发布前建议改成当前"浏览器内"版本。

@@ -213,7 +213,7 @@ export default function Guide() {
                     <div className="lp-extcard-name">
                       HR Helper <span className="lp-extcard-on">已启用</span>
                     </div>
-                    <div className="lp-extcard-d">智能招聘助手 · 眼睛（只读）</div>
+                    <div className="lp-extcard-d">智能招聘助手 · 浏览器扩展</div>
                   </div>
                   <i className="ti ti-pin lp-extcard-pin" aria-hidden="true" />
                 </div>
