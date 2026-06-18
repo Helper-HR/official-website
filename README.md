@@ -1,0 +1,34 @@
+# HR Helper 官网
+
+HR Helper 产品官网（独立 Next.js 站点）。从主仓库 `boss-extension` 的 marketing 分支抽出，做成独立项目。
+
+页面：
+- `/` 落地页（`src/app/Landing.tsx`）
+- `/download` 下载与安装（`src/app/download/`）
+- `/guide` 扩展安装图文教程（`src/app/guide/`）
+
+可编辑配置都在 [`src/app/site.ts`](src/app/site.ts)：下载链接、客服微信、更新日志（changelog）。
+
+## 本地开发
+
+```bash
+npm install
+npm run dev      # http://localhost:3100
+```
+
+## 构建/部署
+
+```bash
+npm run build && npm start   # next start -p 3100
+```
+部署时建议放在 `helper-hr.com`（落地页），与 `admin.helper-hr.com`（管控后台，在 boss-extension/server）分开。nginx 反代到 3100。
+
+## 静态资源
+
+- `public/downloads/sensor.zip` —— 浏览器扩展压缩包。**扩展源码在另一个仓库 `boss-extension/sensor`**；
+  每次扩展发新版后，把最新 `sensor` 文件夹压成 `sensor.zip`（含顶层 `sensor/` 目录）替换这里即可。
+- `public/downloads/ChromeSetup.exe` —— Chrome 安装包（方便国内用户）。如不想托管，可在 `site.ts` 把
+  `CHROME_WIN_URL` 改成官方链接并删除此文件。
+- `public/wechat-qr.png` —— 客服微信二维码。
+
+> 注：`site.ts` 的 changelog 仍有旧架构（真实鼠标/眼睛+手/校准）措辞，发布前建议改成当前"浏览器内"版本。
